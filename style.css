@@ -1,0 +1,267 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #e3e7e8;
+	font-family: system-ui;
+}
+.container{
+	width: 100%;
+	margin: auto;
+	transition: 0.5s;
+}
+.header{
+	display: grid;
+	grid-template-columns: 1fr 50px;
+}
+.header h1{
+	text-align: center;
+	font-size: 50px;
+	color: #565353;
+	margin-top: 20px;
+}
+@media screen and (max-width: 700px){
+	.header h1{
+		font-size: 40px;
+	}
+}
+.header .shopping{
+	position: fixed;
+	text-align: right;
+	right: 3%;
+	top: 75px;
+}
+.header .shopping p{
+	margin: -10px -10px 0 0;
+}
+.header .shopping img{
+	width: 60px;
+}
+.header .shopping span{
+	background: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	position: absolute;
+	top: -5px;
+	left: 80%;
+	padding: 3px 10px;
+}
+.list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 20px;
+	margin-top: 10px;
+}
+@media screen and (max-width: 900px){
+	.list{
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+}
+@media screen and (max-width: 600px){
+	.list{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.card{
+	position: fixed;
+	top: 0px;
+	left: 100%;
+	width: 400px;
+	background: #453e3b;
+	transition: 0.5s;
+	overflow-y: scroll;
+	max-height: 100%;
+	z-index: 8;
+	margin-bottom: 60px;
+
+}
+.card-header{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	border-bottom: 2px solid #88946D;
+	border-radius: 50%;
+	padding-top: 50px;
+}
+.card h1{
+	color: #e8bc0e;
+	font-width: 100;
+	margin: 0;
+	padding: 0 20px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.card h3{
+	color: #C2DF83;;
+}
+
+.card .heading{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	color: #DEEFBA;
+	width: 100%;
+	padding-left: 5%;	
+}
+.card .heading p:nth-child(2){
+	padding-left: 40% ;
+}
+.card .heading p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card .total-amount{
+	text-align: center;
+	color: #e8bc0e;
+	letter-spacing: 3px;
+}
+.card .checkout{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);;
+}
+.card .checkout div{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	border-radius: 10px 10px 0 0;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.card .checkout div:nth-child(2){
+	background: #1c1f25;
+	color: #fff;
+}
+.card .checkout div:last-child{
+	background: #C2DF83;
+}
+.active .card{
+	left: calc(100% - 400px);
+}
+.active .container{
+	transform: translateX(-200px);
+}
+.list .item {
+	text-align: center;
+	background: #dce0e1;
+	padding: 20px;
+	box-shadow: 0 50px 50px #757676;
+	letter-spacing: 1px;
+}
+.list .item img{
+	width: 90%;
+	border-radius: 10px;
+}
+.list .item .title{
+	font-weight: 600;
+}
+.list .item .price{
+	margin: 10px;
+}
+.list .item button{
+	background: #1c1f25;
+	color: #fff;
+	padding: 10px;
+	width: 100%;
+}
+.listCard li{
+	display: grid;
+	grid-template-columns: 100px repeat(3, 1fr);
+	color: white;
+	row-gap: 10px;
+}
+.listCard li div{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.listCard li img{
+	width: 100%;
+	
+		
+}
+.listCard li .pname{
+	position: relative;
+	left: -30%;
+}
+.listCard button{
+	width: auto;
+	background: #fff5;
+	border: none;
+}
+.listCard .count{
+	margin: 0 10px;
+}
+.final{
+	background: #74A706;
+}
+.final p{
+	padding-top: 10px;
+}
+.final:hover{
+	color: yellow;
+}
+.payment{
+	position: fixed;
+	top: 60px;
+	left: 100%;
+	width: 400px;
+	background: #453e3b;
+	transition: 0.8s;
+	z-index: 9;
+	
+}
+.payment h3{
+	text-align: center;
+	border-bottom: 2px solid #88946D;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0;
+	color: #C2DF83;
+}
+.payment-details{
+	color: #D8DBDB;
+	padding: 15px;
+	inherits: ;
+	line-height: 25px;
+	letter-spacing: 2px;
+}
+.payment-details ul{
+	color: #39B9B1;
+}
+.payment-details .bank{
+	color: #7969F1;
+}
+.closefinal {
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	background: #74A706;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}
+.closefinal:hover{
+	color: yellow;
+}
+
+.active-final .payment{
+	left: calc(100% - 400px);
+}
+.active-final .container{
+	transform: translateX(-200px);
+}
