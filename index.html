@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lifella</title>
+	<link rel="icon" type="image/x-icon" href="image/fav.jpg">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="gift.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,23 +19,26 @@
 				<span class="name">Lifella</span>
 			</a>
 		</div>
-		<nav class="content">
-			<ul class="lists">				
+		<nav class="content" id="content">
+			<ul class="lists" id="bar">
+				<a href="#"><li>Home</li></a>				
 				<a href="#products"><li>Produts</li></a>
+				<a href="#social"><li>Social Media</li></a>
 				<a href="#about-us"><li>About us</li></a>
 				<a href="#contact-us"><li>Contact us</li></a>			
 			</ul>
 		</nav>
+		<i class="fa-solid fa-bars" onclick="showBar('bar')"></i>
 	</header>
 	<main>
 		<div class="trans"></div>
 		<div class="front-page">
 			<h1 class="font-effect-shadow-multiple">Glamour fit</h1>
-			<p>We are here to here to grace your look and bring out the glamour, elegance and beauty in you. your awesome look is our concern. We also considers your budget as we bring to you quality hairs of different flavors. Our customers satisfaction is our main focus
+			<p>We are here to grace your look and bring out the glamour, elegance and beauty in you. your awesome look is our concern. We also considers your budget as we bring to you quality hairs of different flavors. Our customers satisfaction is our main focus
 			<a href="#products"><button>Take a look</button></a>
 			</p>
 		</div>				
-		<img src="image/main.jpg" alt="display image">		
+		<img src="image/show.jpg" alt="display image">		
 	</main>
 	<div class="from-ceo">
 		<p>"Lifella is an importer fully dedicated in bring Quality human hairs and weavons to your reach at affordable price. We sell in both Wholesale and Retailing distributing to all parts of Nigeria"</p>
@@ -44,9 +48,9 @@
 		<div class="header">			
 			<h1>Lifella Store</h1>
 			<div class="shopping">			
-				<img src="image/shopping1.png">
+				<img src="image/shopping.svg">
 				<span class="quantity">0</span>
-				<p>Open Cart</p>
+				<p>Open</p>
 			</div>
 		</div>
 		<div class="list" id="products"></div>		
@@ -85,7 +89,7 @@
 		<div class="closefinal">Go Back to Cart</div>
 	</div>
 	<section id="social">
-      <p>Come with us to our Social media handles and be the first to get our new products as they arrive</p>
+      <p>Come with us to our Social Media handles and be the first to get our new products as they arrive</p>
       <a href="https://web.facebook.com/Gift.Onyinyechi101" target="_blank">
         <i class="fa-brands fa-facebook fa-beat" style="color: #513CF0; font-size: 25px;"></i>
       </a>
@@ -103,36 +107,38 @@
 		<div class="about-us" id="about-us">
 			<h3>About Us</h3>
 			<p>
-			Welcome to Lifella Hairs Website! We are a dedicated team passionate about providing high-quality imported human hairs and blended wigs to our customers nationwide. Our mission is to connect international manufacturers and suppliers with consumers in Nigeria, ensuring a seamless and efficient importation process.
-			</p>		
+			Welcome to Lifella Hairs Website! We are a dedicated team passionate about providing high-quality imported human hairs and blended wigs to our customers nationwide. 
+			</p>
 			<div class="hidder" id="about">
-			<p>
-			At Lifella, we understand the significance of accessing diverse hairs from various parts of Nigria. We aim to bridge the gap between global markets and local demand, bringing an extensive range of hair products right to your doorstep. Whether you are a retailer, wholesaler, or an individual looking for unique hair products, we've got you covered.
-			</p>
-			<p>
-			What sets us apart is our commitment to excellence in sourcing, procurement, and distribution in a more cheaper rate. We collaborate with reputable manufacturers and suppliers globally, carefully selecting products that meet our stringent quality standards. Our experienced team conducts thorough research and due diligence to ensure that all hair products comply with international regulations and certifications.
-			</p>
-			<p>
-			Our website serves as a one-stop destination for exploring a wide array of hair products. From Human hairs, High blend, and Low Blend hairs to Children wigs, Synthetic hairs of diverse qualities and much more, we strive to offer a comprehensive range of items to cater to various customer needs and preferences. With our user-friendly interface and detailed product descriptions, you can easily browse, compare, and select the items that best suit your requirements.
-			</p>
-			<p>
-			We prioritize customer satisfaction and make every effort to provide a seamless and hassle-free shopping experience. Our efficient logistics network enables us to handle importation and distribution efficiently, ensuring timely delivery of your orders. We take pride in our dedicated customer support team, ready to assist you with any inquiries, concerns, or assistance you may need throughout your shopping journey.
-			</p>
-			<p>
-			As an ethically conscious company, we prioritize sustainable business practices. We actively seek eco-friendly products and suppliers who share our commitment to minimizing environmental impact. By choosing us as your importation and distribution partner, you contribute to a more sustainable future.
-			</p>
-			<p>
-			We value the trust and loyalty of our customers and continually strive to improve our services. Your feedback and suggestions are invaluable to us as we continuously evolve to meet your expectations and deliver the best possible experience.
-			</p>
-			<p>
-			Thank you for choosing us as your trusted partner in goods importation and distribution
-			</p>
-			<p>
-			Welcome to a world of endless possibilities!
-			</p>
-			<p>
-			Lifella Hair Team</p>
-			</p>
+				<p>
+				Our mission is to connect international manufacturers and suppliers with consumers in Nigeria, ensuring a seamless and efficient importation process.
+				</p>		
+				
+				<p>
+				At Lifella, we understand the significance of accessing diverse hairs from various parts of Nigria. We aim to bridge the gap between global markets and local demand, bringing an extensive range of hair products right to your doorstep. Whether you are a retailer, wholesaler, or an individual looking for unique hair products, we've got you covered.
+				</p>
+				<p>
+				What sets us apart is our commitment to excellence in sourcing, procurement, and distribution in a more cheaper rate. We collaborate with reputable manufacturers and suppliers globally, carefully selecting products that meet our stringent quality standards. Our experienced team conducts thorough research and due diligence to ensure that all hair products comply with international regulations and certifications.
+				</p>
+				<p>
+				Our website serves as a one-stop destination for exploring a wide array of hair products. From Human hairs, High blend, and Low Blend hairs to Children wigs, Synthetic hairs of diverse qualities and much more, we strive to offer a comprehensive range of items to cater to various customer needs and preferences. With our user-friendly interface and detailed product descriptions, you can easily browse, compare, and select the items that best suit your requirements.
+				</p>
+				<p>
+				We prioritize customer satisfaction and make every effort to provide a seamless and hassle-free shopping experience. Our efficient logistics network enables us to handle importation and distribution efficiently, ensuring timely delivery of your orders. We take pride in our dedicated customer support team, ready to assist you with any inquiries, concerns, or assistance you may need throughout your shopping journey.
+				</p>
+				<p>
+				As an ethically conscious company, we prioritize sustainable business practices. We actively seek eco-friendly products and suppliers who share our commitment to minimizing environmental impact. By choosing us as your importation and distribution partner, you contribute to a more sustainable future.
+				</p>
+				<p>
+				We value the trust and loyalty of our customers and continually strive to improve our services. Your feedback and suggestions are invaluable to us as we continuously evolve to meet your expectations and deliver the best possible experience.
+				</p>
+				<p>
+				Thank you for choosing us as your trusted partner in goods importation and distribution
+				</p>
+				<p>
+				Welcome to a world of endless possibilities!
+				Lifella Hair Team
+				</p>
 			</div>
 			<button onclick="showAboutUs('about')">More</button>
 			<button onclick="hideAboutUs('about')">Less</button>
@@ -143,46 +149,50 @@
 			Thank you for your interest in our hair product. We value your feedback, inquiries, and suggestions. Please feel free to reach out to us using the following contact information:
 		</p>
 		<div class="hidder" id="contact">
-		<p>
-			Customer Support:
-			Email: support@lifella.com.ng
-			Phone: 08023613691 Whatsapp line
-			Working Hours: Monday to Friday, 8:00 AM - 7:00 PM (GMT)
-		</p>
-		<p>
-			Sales Inquiries:
-			Email: ellagift25@gmail.com
-			Phone: 09133570055
-			Working Hours: Monday to Friday, 8:00 AM - 7:00 PM (GMT)
-		</p>		
-		<p>
-			General Inquiries:
-			Email: info@lifella.com.ng
-		</p>
-		<p>
-			We strive to provide prompt and efficient assistance to all our customers and visitors. Whether you have questions about our goods or need assistance with an order, our dedicated team is here to help.
-		</p>
-		<p>
-			Please provide us with the necessary details related to your inquiry, such as your name, contact information, and a brief description of your request. This will help us understand your needs better and enable us to respond to you more effectively.
-		</p>
-		<p>
-			We aim to respond to all inquiries within 24 to 48 hours, excluding weekends and holidays.
-		</p>
-		<p>
-			Thank you once again for choosing us. We look forward to hearing from you and assisting you with your requirements.
-		</p>
-		<p>
-			Best regards,
-		</p>
-		<p>
-			Lifella Hairs
-			Importation and Distribution enterpise
-		</p>
+			<p>
+				Customer Support:
+				Email: support@lifella.com.ng
+				Phone: 08023613691 Whatsapp line
+				Working Hours: Monday to Friday, 8:00 AM - 7:00 PM (GMT)
+			</p>
+			
+			
+			<p>
+				Sales Inquiries:
+				Email: ellagift25@gmail.com
+				Phone: 09133570055
+				Working Hours: Monday to Saturday, 8:00 AM - 7:00 PM (GMT)
+			</p>		
+			<p>
+				General Inquiries:
+				Email: info@lifella.com.ng
+			</p>
+			<p>
+				We strive to provide prompt and efficient assistance to all our customers and visitors. Whether you have questions about our goods or need assistance with an order, our dedicated team is here to help.
+			</p>
+			<p>
+				Please provide us with the necessary details related to your inquiry, such as your name, contact information, and a brief description of your request. This will help us understand your needs better and enable us to respond to you more effectively.
+			</p>
+			<p>
+				We aim to respond to all inquiries within 24 to 48 hours, excluding weekends.
+			</p>
+			<p>
+				Thank you once again for choosing us. We look forward to hearing from you and assisting you with your requirements.
+			</p>
+			<p>
+				Best regards,
+			</p>
+			<p>
+				Lifella Hairs
+				Importation and Distribution enterpise
+			</p>
 		</div>		
 		<button onclick="contactUs('contact')">More</button>
 		<button onclick="hideContact('contact')">Less</button>		
 	</div>
-	<footer>
+	
+</section>
+<footer>
 		<p>Copyright 2023 © Lifella hair Importers. All rights reserved</p>
 		<div class="last-social">	      
 	      <a href="https://web.facebook.com/Gift.Onyinyechi101" target="_blank">
@@ -195,10 +205,13 @@
 	       <i class="fa-brands fa-instagram" style="color: #367277;"></i>
 	      </a>      
   		</div>                     	
-		<p>Privacy Policies</p>			
-	</footer>	
-</section>
-include file="gift.html"	
+		<p>Privacy Policies</p>		
+		<p class="developer">Developed and Managed by Ikendu Lifes
+      <span class="devnum">+2348061632276</span>
+      <span class="devreg">CAC Reg: 4133480</span>
+    </p>	
+</footer>	
+<!--include file="gift.html"-->	
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

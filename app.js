@@ -38,65 +38,87 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
 	{
 		id: 1,
-		name: 'PRODUCT NAME 1',
-		image: 'a.jpg',
-		price: 5
+		name: 'Pixie Curls',
+		image: 'aa.jpg',
+		price: 8000
 
 	},
 	{
 		id: 2,
-		name: 'PRODUCT NAME 2',
-		image: 'b.jpg',
-		price: 10
+		name: 'Bouncy Curls',
+		image: 'a.jpg',
+		price: 7500
 	},
 	{
 		id: 3,
-		name: 'PRODUCT NAME 3',
+		name: 'Fringe Blunt Cut',
+		image: 'b.jpg',
+		price: 4500	
+	},
+	{
+		id: 4,
+		name: '12" Blunt Cut',
 		image: 'c.jpg',
-		price: 20	
+		price: 6850
+
 	},
 	{
-		id: 4,
-		name: 'PRODUCT NAME 4',
+		id: 5,
+		name: 'Afro Wine-red',
 		image: 'd.jpg',
-		price: 5
-
-	},
-	{
-		id: 5,
-		name: 'PRODUCT NAME 5',
-		image: 'main.jpg',
-		price: 6
+		price: 3500
 
 	},
 	{
 		id: 6,
-		name: 'PRODUCT NAME 6',
-		image: 'f.jpg',
-		price: 15
+		name: 'Afro Whitish',
+		image: 'e.jpg',
+		price: 3500
 
 	},
 	{
 		id: 4,
-		name: 'PRODUCT NAME 4',
-		image: 'logo.jpg',
-		price: 5
+		name: 'Illusion Frontal Curls',
+		image: 'f.jpg',
+		price: 4000
 
 	},
 	{
 		id: 5,
-		name: 'PRODUCT NAME 5',
-		image: 'h.jpg',
-		price: 6
+		name: 'T Frontal Curls',
+		image: 'g.jpg',
+		price: 4000
 
 	},
 	{
 		id: 6,
-		name: 'PRODUCT NAME 6',
-		image: 'a.jpg',
-		price: 15
+		name: 'Silky Straight',
+		image: 'h.jpg',
+		price: 6000
 
 	},
+	{
+		id: 6,
+		name: 'Silky Straight',
+		image: 'i.jpg',
+		price: 6000
+
+	},
+	{
+		id: 6,
+		name: 'T Frontal Bob hair blend',
+		image: 'j.jpg',
+		price: 10000
+
+	},
+	{
+		id: 6,
+		name: 'Blunt Cut T27',
+		image: 'main.jpg',
+		price: 6500
+
+	},
+
 ];
 
 let listCards = [];
@@ -175,6 +197,12 @@ function hideContact(hide){
 	hide.style.display = hide.style.display == "none"? "block" : "none"
 }
  function showNum(num){
-          var num = document.getElementById(num);
-          num.style.visibility = num.style.visibility == "visible"? "hidden" : "visible";
-        }
+    var num = document.getElementById(num);
+    num.style.visibility = num.style.visibility == "visible"? "hidden" : "visible";
+}
+function showBar(bar){
+	var bar = document.getElementById(bar);
+	bar.style.display = bar.style.display == "block"? "none" : "block";
+}
+
+
